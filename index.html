@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo"
+            >MENTOR<span class="logo-web">Україна</span></a
+          >
+          <ul class="header-list">
+            <li><a href="" class="nav-link">Послуги</a></li>
+            <li><a href="" class="nav-link">Контакти</a></li>
+            <li><a href="" class="nav-link">Про Компанію</a></li>
+            <li>
+              <a href="" class="nav-link"
+                >Правове регулювання та юридична інформація</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!--
+        <address class="contacts">
+          <ul class="header-contacts">
+            <li>
+              <a href="mailto:info@devstudio.com" class="nav-link-contact"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="nav-link-contact"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        -->
+        <button type="button" class="mob-opn-btn">
+          <svg class="opn-btn" width="24" height="24">
+            <use href="./images/icons.svg#icon-Group"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!---Mobile menu-->
+      <div class="mob-menu is-ope">
+        <div class="container mob-menu-container">
+          <button type="button" class="mob-close-btn">
+            <svg class="mob-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp"></use>
+            </svg>
+          </button>
+          <nav class="mob-nav">
+            <ul class="mob-list">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="mob-link current">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-link">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mob-contacts">
+            <ul class="mob-header-contacts">
+              <li class="mob-contacts-list">
+                <a href="tel:+110001111111" class="mob-link-contact current"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-contacts-list">
+                <a href="mailto:info@devstudio.com" class="mob-link-contact"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="soc-list-icons-mobile">
+            <li class="soc-list-item mobile-item">
+              <a class="soc-link" href="">
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-list-item mobile-item">
+              <a class="soc-link" href="">
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-list-item mobile-item">
+              <a class="soc-link" href="">
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-list-item mobile-item">
+              <a class="soc-link" href="">
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--Hero-->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-container">
+            <h1 class="hero-section-title">
+              Ми страхуємо ваші ризики, ви — своє майбутнє.
+            </h1>
+            <img src="./images/13.png" height="300" width="300" />
+          </div>
+          <p class="hero-p">Володимир Гутнікевич</p>
+          <!--
+          <button type="button" class="button-order">Order Service</button>
+        --></div>
+      </section>
+      <!--Our Advantages-->
+      <!--
+      <section class="advantages-section">
+        <div class="container">
+          <h2 class="visually-hidden">Our Advantages</h2>
+          <ul class="advantages-box">
+            <li class="advantages-punkts">
+              
+              <div class="icon-box">
+                <svg class="adv-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-antenna-1"></use>
+                </svg>
+              </div>
+              
+              <h3 class="advantages-list visually-hidden">Strategy</h3>
+              <p class="paragraph">
+                Наша стратегія — створення персоналізованих рішень для кожного
+                клієнта, які поєднують найкращі пропозиції від провідних
+                страхових компаній. Ми орієнтуємося на довгострокову співпрацю,
+                щоб стати для вас надійним партнером, завжди готовим захистити
+                ваші інтереси. Ретельний аналіз ринку, гнучкий підхід та чітке
+                розуміння потреб клієнта — основа нашої роботи, спрямованої на
+                стабільність і фінансовий захист ваших активів та життя.
+              </p>
+            </li>
+            <!--
+            <li class="advantages-punkts">
+              <div class="icon-box">
+                <svg class="adv-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-clock-1"></use>
+                </svg>
+              </div>
+              
+              <h3 class="advantages-list">Punctuality</h3>
+              <p class="paragraph">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="advantages-punkts">
+              <div class="icon-box">
+                <svg class="adv-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
+              
+              <h3 class="advantages-list">Diligence</h3>
+              <p class="paragraph">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="advantages-punkts">
+              <div class="icon-box">
+                <svg class="adv-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
+              
+              <h3 class="advantages-list">Technologies</h3>
+              <p class="paragraph">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+     
+      <section class="container">
+        <div class="strategy">
+          <p class="strategy-p">
+            Наша стратегія — створення персоналізованих рішень для кожного
+            клієнта, які поєднують найкращі пропозиції від провідних страхових
+            компаній. Ми орієнтуємося на довгострокову співпрацю, щоб стати для
+            вас надійним партнером, завжди готовим захистити ваші інтереси.
+            Ретельний аналіз ринку, гнучкий підхід та чітке розуміння потреб
+            клієнта — основа нашої роботи, спрямованої на стабільність і
+            фінансовий захист ваших активів та життя.
+          </p>
+        </div>
+      </section>
+       -->
+      <!--Our Team
+      <section class="team-section">
+        <div class="container">
+          <h2 class="team">Our Team</h2>
+          <ul class="team-names-list">
+            <li class="team-section-list">
+              <img
+                srcset="
+                  ./images/team-card1-1x.jpg 1x,
+                  ./images/team-card1-2x.jpg 2x
+                "
+                src="./images/mark.jpg"
+                width="264"
+                alt="Mark Guerrero"
+                class="member-foto"
+              />
+              <div class="team-member">
+                <h3 class="team-name">Mark Guerrero</h3>
+                <p class="team-paragraph">Product Designer</p>
+                <ul class="soc-list-icons">
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-section-list">
+              <img
+                srcset="
+                  ./images/team-card2-1x.jpg 1x,
+                  ./images/team-card2-2x.jpg 2x
+                "
+                src="./images/tom.jpg"
+                width="264"
+                alt="Tom Ford"
+                class="member-foto"
+              />
+              <div class="team-member">
+                <h3 class="team-name">Tom Ford</h3>
+                <p class="team-paragraph">Frontend Developer</p>
+                <ul class="soc-list-icons">
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-section-list">
+              <img
+                srcset="
+                  ./images/team-card3-1x.jpg 1x,
+                  ./images/team-card3-2x.jpg 2x
+                "
+                src="./images/camila.jpg"
+                width="264"
+                alt="Camila Garcia"
+                class="member-foto"
+              />
+              <div class="team-member">
+                <h3 class="team-name">Camila Garcia</h3>
+                <p class="team-paragraph">Marketing</p>
+                <ul class="soc-list-icons">
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-section-list">
+              <img
+                srcset="
+                  ./images/team-card4-1x.jpg 1x,
+                  ./images/team-card4-2x.jpg 2x
+                "
+                src="./images/daniel.jpg"
+                width="264"
+                alt="Daniel Wilson"
+                class="member-foto"
+              />
+              <div class="team-member">
+                <h3 class="team-name">Daniel Wilson</h3>
+                <p class="team-paragraph">UI Designer</p>
+                <ul class="soc-list-icons">
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list-item">
+                    <a class="soc-link" href="">
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      -->
+      <!--Our Portfolio-->
+      <section class="portfolio">
+        <div class="container">
+          <h2 class="portfolio-title">Наші послуги</h2>
+          <ul class="portfolio-list">
+            <li class="portfolio-list-items">
+              <div class="app-img">
+                <!--
+                <picture>
+                  <source
+                    srcset="
+                      ./images-portfolio/img1.jpg  1x,
+                      ./images-portfolio/img1@.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images-portfolio/img1.jpg  1x,
+                      ./images-portfolio/img1@.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images-portfolio/project-card1-1x.jpg 1x,
+                      ./images-portfolio/project-card1-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img src="./images-portfolio/img1.jpg" alt="banking-app" />
+                </picture>
+                -->
+                <img src="./images/1.jpg" />
+                <p class="content-app">
+                  Активно беремо участь у всебічному процесі врегулювання
+                  страхових випадків та в процедурах стягнення боргів. Щороку ми
+                  врегульовуємо кілька тисяч страхових випадків з усіх видів
+                  ризиків, що існують на нашому ринку.
+                </p>
+              </div>
+              <div class="tools">
+                <h3 class="portfolio-tools">Врегулювання збитків</h3>
+                <p class="paragraph"></p>
+              </div>
+            </li>
+            <li class="portfolio-list-items">
+              <div class="app-img">
+                <!--
+                <picture>
+                  <source
+                    srcset="
+                      ./images-portfolio/img2.jpg  1x,
+                      ./images-portfolio/img2@.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images-portfolio/img2.jpg  1x,
+                      ./images-portfolio/img2@.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images-portfolio/project-card2-1x.jpg 1x,
+                      ./images-portfolio/project-card2-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img src="./images-portfolio/img2.jpg" alt="pay-method" />
+                </picture>
+                -->
+                <img src="./images/2.jpg" />
+                <p class="content-app">
+                  Основною діяльністю компанії. є посередництво в укладанні
+                  договорів страхування, починаючи від вибору найвигідніших
+                  умов, через вибір страховика, переговори по умовах після
+                  укладання договору, а також поточне обслуговування.
+                </p>
+              </div>
+              <div class="tools">
+                <h3 class="portfolio-tools">Страхування</h3>
+                <p class="paragraph"></p>
+              </div>
+            </li>
+            <li class="portfolio-list-items">
+              <div class="app-img">
+                <!--
+                <picture>
+                  <source
+                    srcset="
+                      ./images-portfolio/img3.jpg  1x,
+                      ./images-portfolio/img3@.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images-portfolio/img3.jpg  1x,
+                      ./images-portfolio/img3@.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images-portfolio/project-card3-1x.jpg 1x,
+                      ./images-portfolio/project-card3-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img src="./images-portfolio/img3.jpg" alt="meditation-app" />
+                </picture>
+                -->
+                <img src="./images/3.jpg" />
+                <p class="content-app">
+                  У межах брокерського обслуговування ми проводимо страхові
+                  аудити у клієнтів. Вони спрямовані на аналіз ризиків та загроз
+                  і є основою для подальшої розробки страхових програм для
+                  конкретного підприємства.
+                </p>
+              </div>
+              <div class="tools">
+                <h3 class="portfolio-tools">Аудит</h3>
+                <p class="paragraph"></p>
+              </div>
+            </li>
+            <!--
+            <li class="portfolio-list-items">
+              <div class="app-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images-portfolio/img4.jpg  1x,
+                      ./images-portfolio/img4@.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images-portfolio/img4.jpg  1x,
+                      ./images-portfolio/img4@.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images-portfolio/project-card4-1x.jpg 1x,
+                      ./images-portfolio/project-card4-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img src="./images-portfolio/img4.jpg" alt="taxi-service" />
+                </picture>
+                <p class="content-app">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="tools">
+                <h3 class="portfolio-tools">Taxi Service</h3>
+                <p class="paragraph">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-list-items">
+              <div class="app-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images-portfolio/img5.jpg  1x,
+                      ./images-portfolio/img5@.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images-portfolio/img5.jpg  1x,
+                      ./images-portfolio/img5@.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images-portfolio/project-card5-1x.jpg 1x,
+                      ./images-portfolio/project-card5-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img src="./images-portfolio/img5.jpg" alt="picture-app" />
+                </picture>
+                <p class="content-app">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="tools">
+                <h3 class="portfolio-tools">Screen Illustrations</h3>
+                <p class="paragraph">Design</p>
+              </div>
+            </li>
+            <li class="portfolio-list-items">
+              <div class="app-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images-portfolio/img6.jpg  1x,
+                      ./images-portfolio/img6@.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images-portfolio/img6.jpg  1x,
+                      ./images-portfolio/img6@.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images-portfolio/project-card6-1x.jpg 1x,
+                      ./images-portfolio/project-card6-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img src="./images-portfolio/img6.jpg" alt="courses-app" />
+                </picture>
+                <p class="content-app">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="tools">
+                <h3 class="portfolio-tools">Online Courses</h3>
+                <p class="paragraph">Marketing</p>
+              </div>
+            </li>
+          </ul>
+          --->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="wrap-container">
+          <a href="./index.html" class="logo-footer"
+            >MENTOR<span class="logo-web-footer">Україна</span></a
+          >
+          <p class="paragraph-footer">
+            Ваш надійний партнер у світі страхування
+          </p>
+        </div>
+        <div class="social">
+          <p class="social-media">Social media</p>
+          <ul class="social-media-list">
+            <!---
+            <li class="social-icon">
+              <a href="" class="link-footer">
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a href="" class="link-footer">
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            -->
+            <li class="social-icon">
+              <a
+                href="https://www.facebook.com/mentor.broker"
+                target="_blank"
+                class="link-footer"
+              >
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a
+                href="https://www.linkedin.com/company/mentors.a./"
+                target="_blank"
+                class="link-footer"
+              >
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="adress-in-footer">
+          <p class="paragraph-footer">Наша адреса:</p>
+          <a href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%93%D0%BE%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D1%97,+5%D0%B0,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0,+79000/@49.8359375,23.9990604,17z/data=!3m1!4b1!4m6!3m5!1s0x473add822debffff:0xbe0284b024112d3c!8m2!3d49.8359375!4d24.0016353!16s%2Fg%2F11rd28qfk2?entry=ttu" target="_blank" class="nav-link-contact" >вулиця Горської, 5а, Львів, Львівська область, Україна, 79000</a>
+          <p class="paragraph-footer">Телефон/Факс/E-mail</p>
+          <ul>
+            <li><a href="tel:+380503701483" class="nav-link-contact"
+                >тел: +38 (050) 370 14 83</a
+              ></li>
+            <li class="nav-link-contact">факс:+38 (032) 237 47 17</li>
+            <li><a href="mailto:ukraina@mentor.pl" class="nav-link-contact">ukraina@mentor.pl</a></li>
+          </ul>
+        </div>
+        <!--
+        <div class="footer-form">
+          <p class="p-form">Subscribe</p>
+          <form class="input-form-footer">
+            <label class="footer-label">
+              <input
+                type="email"
+                name="email-input"
+                placeholder="E-mail"
+                class="subscribe-input"
+              />
+            </label>
+            <button type="submit" class="footer-submit-btn">
+              Subscribe<svg class="icon-sub" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        ---->
+      </div>
+    </footer>
+    <!--BACKDROP-->
+    <!-----------------------------
+    <div class="backdrop is-ope">
+      <div class="modal">
+        <button type="button" class="modal-btn">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+        <p class="p-modal">Leave your contacts and we will call you back</p>
+        <form>
+          <div class="input-forms">
+            <label class="label-forms" for="user-name">Name</label>
+            <div class="input-field">
+              <input
+                id="user-name"
+                type="text"
+                class="input-place"
+                name="user-name"
+              />
+              <svg class="input-field-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-Vector1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-forms">
+            <label class="label-forms" for="user-phone">Phone</label>
+            <div class="input-field">
+              <input
+                id="user-phone"
+                type="text"
+                class="input-place"
+                name="user-name"
+              />
+              <svg class="input-field-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-Vector2"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-forms">
+            <label class="label-forms" for="user-email">Email</label>
+            <div class="input-field">
+              <input
+                id="user-email"
+                type="text"
+                class="input-place"
+                name="user-name"
+              />
+              <svg class="input-field-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-Vector3"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="comment-form">
+            <label class="label-forms" for="user-comment">Comment</label>
+            <textarea
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+              class="text-comment-place"
+            >
+Text input
+            </textarea>
+          </div>
+          <div class="checkbox">
+            <input
+              id="user-privacy"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+              class="privacy-check visually-hidden"
+            />
+            <label for="user-privacy" class="user-privacy-label"
+              ><span class="privacy-span"
+                ><svg class="priv-icon" width="10" height="8">
+                  <use
+                    href="./images/icons.svg#icon-check">
+                  </use>
+                </svg>
+              </span><span>I accept the terms and conditions of the<a href="" class="link-privacy">Privacy Policy</a></span>
+            </label>
+          </div>
+          <button type="button" class="form-button">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+-------------->
+  </body>
+</html>
